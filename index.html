@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verified Filipino Tech Archive</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- External Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Hamburger Menu (Top Right) -->
+<button id="openSidebar" class="btn btn-primary position-fixed top-0 end-0 m-3 z-index-1050">☰</button>
+
+<!-- Sidebar (Right-Aligned) -->
+<div id="sidebar" class="sidebar bg-dark text-white position-fixed top-0 end-0 h-100 p-4" style="width: 280px; display: none; z-index: 1051;">
+  <button id="closeSidebar" class="btn btn-danger position-absolute top-0 end-0 m-3">X</button>
+
+  <div class="text-center mt-4">
+    <img src="logo_sm.png" alt="Filipino Tech Archive Logo" class="sidebar-logo mb-2" />
+    <h4>Verified Filipino Tech Archive</h4>
+    <div class="sidebar-underline"></div>
+  </div>
+
+  <nav class="nav flex-column mt-4">
+    <a class="nav-link text-white" href="#home">
+      <i class="bi bi-house-door me-2"></i> Home
+    </a>
+    <a class="nav-link text-white" href="#home">
+      <i class="bi bi-person-badge me-2"></i> Welcome
+    </a>
+    <a class="nav-link text-white" href="#showall">
+      <i class="bi bi-folder2-open me-2"></i> Show All Categories
+    </a>
+    <a class="nav-link text-white" href="#contact">
+      <i class="bi bi-envelope me-2"></i> Contact
+    </a>
+  </nav>
+</div>
+
+<!-- Hero Section: Verified Filipino Tech Archive -->
+<section id="home" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Column: Archive Mission -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h1 id="animated-title">
+          Filipino Tech <span id="animated-role" class="typing"></span>
+        </h1>
+        <p>
+          This archive honors verified Filipino tech companies, platforms, and pioneers. From early innovations to modern breakthroughs, we document real contributions across sectors—resilient, impactful, and culturally rooted.
+        </p>
+
+        <div class="row text-center my-4">
+          <div class="col-4">
+            <h2 class="counter" data-target="49">0</h2>
+            <p>Verified Companies</p>
+          </div>
+          <div class="col-4">
+            <h2 class="counter" data-target="25">0</h2>
+            <p>Tech Sectors</p>
+          </div>
+          <div class="col-4">
+            <h2 class="counter" data-target="26">0</h2>
+            <p>Filipino Founders</p>
+          </div>
+        </div>
+
+        <a href="#showall" class="btn btn-primary me-2">Browse Archive</a>
+        <a href="#contact" class="btn btn-outline-secondary">Submit a Company</a>
+      </div>
+
+      <!-- Right Column: Visual Identity -->
+      <div class="col-md-6 text-center">
+        <div class="image-frame mx-auto position-relative" style="width: 300px; height: 300px;">
+          <img src="logo_sq.png" alt="Filipino Tech Archive Logo"
+               class="profile-img" style="width: 300px; height: 300px; object-fit: cover; border-radius: 16px;" />
+
+          <button class="badge-card top-left badge-1">
+            <i class="bi bi-check2-circle me-2"></i> Verified Listings
+          </button>
+          <button class="badge-card top-right badge-2">
+            <i class="bi bi-globe me-2"></i> Nationwide Reach
+          </button>
+          <button class="badge-card bottom-left badge-3">
+            <i class="bi bi-lightbulb me-2"></i> Innovation Legacy
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Main Content -->
+<main class="pt-5 px-3 px-md-5">
+  <section class="py-5">
+    <div class="container">
+      <h1 class="mb-3">🇵🇭 Verified Filipino Tech Archive</h1>
+      <p class="lead">Celebrating Filipino tech companies, platforms, and pioneers.</p>
+      <div class="section-divider"></div>
+
+      <p class="mt-4">
+        This archive documents <strong>49 verified companies</strong> across <strong>25 tech sectors</strong>,
+        representing the work of <strong>26 Filipino founders</strong>. Each entry is curated for <strong>authenticity, impact, and cultural relevance</strong>.
+      </p>
+
+      <p>
+        We honor Filipino ingenuity in software, hardware, AI, fintech, e-commerce, and creative industries—
+        highlighting not just global achievements, but <strong>local resilience and legacy-building</strong>.
+        Whether it's a startup transforming infrastructure, a community empowering future technologists,
+        or an independent developer building override-proof tools, this archive centers <strong>real contributions</strong> over hype.
+      </p>
+
+      <h5 class="mt-5 mb-3">🔍 What Makes an Entry "Verified"?</h5>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-primary">
+            <div class="card-body">
+              <h6 class="card-title text-primary">✔️ Filipino Origin</h6>
+              <p class="card-text">Founded or led by Filipino individuals or teams.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-primary">
+            <div class="card-body">
+              <h6 class="card-title text-primary">✔️ Documented Impact</h6>
+              <p class="card-text">Proven contributions in tech, design, or infrastructure.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-primary">
+            <div class="card-body">
+              <h6 class="card-title text-primary">✔️ Cultural Relevance</h6>
+              <p class="card-text">Rooted in Filipino values, needs, or innovation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-primary">
+            <div class="card-body">
+              <h6 class="card-title text-primary">✔️ Archival Integrity</h6>
+              <p class="card-text">No ghost startups, no vaporware—just verified legacy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <a href="#showall" class="btn btn-primary me-2">Browse Archive</a>
+        <a href="#contact" class="btn btn-outline-primary">Submit a Company</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Companies Dataset -->
+<script src="companies.js"></script>
+
+<!-- Show All Section -->
+<section id="showall" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4"><i class="fa-solid fa-list"></i> All Verified Companies</h2>
+    <div class="section-divider mx-auto mb-3"></div>
+    <p class="text-center mb-4">Browse the full list of verified Filipino tech companies. Use the filters below to explore by category or founder.</p>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <select id="categoryFilter" class="form-select">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search by name or founder">
+      </div>
+    </div>
+
+    <div class="row" id="showAllGrid"></div>
+  </div>
+</section>
+<!-- Filtering & Rendering Logic -->
+<script>
+  const showAllContainer = document.getElementById("showAllGrid");
+  const categoryFilter = document.getElementById("categoryFilter");
+  const searchInput = document.getElementById("searchInput");
+
+  // Normalize year format
+  function normalizeYear(entry) {
+    const raw = entry.year;
+    const match = raw.match(/^(\d{4})(?:–(\d{4}|present|2025))?$/);
+    if (match) {
+      entry.yearStart = parseInt(match[1]);
+      entry.yearEnd = match[2] ? (match[2] === "present" ? new Date().getFullYear() : parseInt(match[2])) : null;
+    } else {
+      entry.yearStart = raw.includes("2000s") ? 2000 : null;
+      entry.yearEnd = null;
+    }
+    return entry;
+  }
+
+  const normalizedCompanies = companies.map(normalizeYear);
+
+  // Render card
+  function renderCompanyCard(c) {
+    return `
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm h-100 animate__animated animate__fadeInUp">
+          <img src="${c.image}" class="card-img-top" alt="${c.name} logo" onerror="this.src='imgs_ph/default.png'">
+          <div class="card-body">
+            <h5 class="card-title">${c.name}</h5>
+            <p class="card-text"><strong>Founder(s):</strong> ${c.founder}</p>
+            <p class="card-text"><strong>Product:</strong> ${c.product}</p>
+            <p class="card-text"><strong>Year Founded:</strong> ${c.year}</p>
+            <p class="card-text"><strong>Known For:</strong> ${c.knownFor}</p>
+            <span class="badge bg-secondary mb-2">${c.category}</span><br>
+            <a href="${c.website}" class="btn btn-outline-primary btn-sm mt-2" target="_blank">
+              <i class="fa-solid fa-globe"></i> Visit Website
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Populate category dropdown
+  const categories = [...new Set(normalizedCompanies.map(c => c.category))].sort();
+  categories.forEach(cat => {
+    const option = document.createElement("option");
+    option.value = cat;
+    option.textContent = cat;
+    categoryFilter.appendChild(option);
+  });
+
+  // Filter logic
+  function filterCompanies() {
+    const selectedCategory = categoryFilter.value;
+    const query = searchInput.value.toLowerCase();
+
+    const filtered = normalizedCompanies.filter(c => {
+      const matchCategory = selectedCategory ? c.category === selectedCategory : true;
+      const matchSearch = c.name.toLowerCase().includes(query) || c.founder.toLowerCase().includes(query);
+      return matchCategory && matchSearch;
+    });
+
+    showAllContainer.innerHTML = filtered.map(renderCompanyCard).join("");
+  }
+
+  // Event listeners
+  categoryFilter.addEventListener("change", filterCompanies);
+  searchInput.addEventListener("input", filterCompanies);
+
+  // Initial render
+  filterCompanies();
+</script>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="section-divider"></div>
+    <p>Reach out for collaborations, submissions, or inquiries.</p>
+    <form>
+      <input type="text" class="form-control mb-3" placeholder="Your Name" />
+      <input type="email" class="form-control mb-3" placeholder="Your Email" />
+      <input type="text" class="form-control mb-3" placeholder="Subject" />
+      <textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center bg-dark text-white">
+  <div class="container">
+    <small>&copy; 2025 Verified Filipino Tech Archive. All rights reserved.</small>
+  </div>
+</footer>
+
+<!-- Sidebar Toggle Script -->
+<script>
+  const openSidebarBtn = document.getElementById("openSidebar");
+  const closeSidebarBtn = document.getElementById("closeSidebar");
+  const sidebar = document.getElementById("sidebar");
+
+  openSidebarBtn.addEventListener("click", () => {
+    sidebar.style.display = "block";
+  });
+
+  closeSidebarBtn.addEventListener("click", () => {
+    sidebar.style.display = "none";
+  });
+</script>
+
+<!-- Bootstrap Bundle & Custom Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
