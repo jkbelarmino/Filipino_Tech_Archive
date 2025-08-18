@@ -30,20 +30,24 @@
     <div class="sidebar-underline"></div>
   </div>
 
-  <nav class="nav flex-column mt-4">
-    <a class="nav-link text-white" href="#home">
-      <i class="bi bi-house-door me-2"></i> Home
-    </a>
-    <a class="nav-link text-white" href="#home">
-      <i class="bi bi-person-badge me-2"></i> Welcome
-    </a>
-    <a class="nav-link text-white" href="#showall">
-      <i class="bi bi-folder2-open me-2"></i> Show All Categories
-    </a>
-    <a class="nav-link text-white" href="#contact">
-      <i class="bi bi-envelope me-2"></i> Contact
-    </a>
-  </nav>
+<nav class="nav flex-column mt-4">
+  <a class="nav-link text-white" href="#home">
+    <i class="bi bi-house-door me-2"></i> Home
+  </a>
+  <a class="nav-link text-white" href="#home">
+    <i class="bi bi-person-badge me-2"></i> Welcome
+  </a>
+  <a class="nav-link text-white" href="#showall">
+    <i class="bi bi-folder2-open me-2"></i> Show All Categories
+  </a>
+  <a class="nav-link text-white" href="#sources">
+    <i class="bi bi-book me-2"></i> Sources & Attribution
+  </a>
+  <a class="nav-link text-white" href="#contact">
+    <i class="bi bi-envelope me-2"></i> Contact
+  </a>
+</nav>
+
 </div>
 
 <!-- Hero Section: Verified Filipino Tech Archive -->
@@ -156,6 +160,13 @@
         </div>
       </div>
 
+      <!-- Legal Disclaimer -->
+      <div class="mt-5">
+        <p class="small text-muted">
+          <strong>Disclaimer:</strong> All company names, logos, trademarks, and product images featured in this archive are the property of their respective owners. Their inclusion is for identification, archival, and educational purposes only, and does not imply any affiliation, endorsement, or partnership with the Verified Filipino Tech Archive. All information presented is based on publicly available sources, including official websites, press releases, and verified third-party directories. We do not claim ownership of any proprietary content and strive to ensure accuracy, attribution, and respectful representation. If you are a company representative and wish to update or clarify your listing, please contact us directly.
+        </p>
+      </div>
+
       <div class="mt-4">
         <a href="#showall" class="btn btn-primary me-2">Browse Archive</a>
         <a href="#contact" class="btn btn-outline-primary">Submit a Company</a>
@@ -163,6 +174,7 @@
     </div>
   </section>
 </main>
+
 
 <!-- Companies Dataset -->
 <script src="companies.js"></script>
@@ -262,6 +274,77 @@
   // Initial render
   filterCompanies();
 </script>
+
+
+<section id="sources" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center"><i class="fa-solid fa-book-open"></i> Sources & Attribution</h2>
+    <p class="text-center mb-4">The Filipino Tech Archive is built on verified data from trusted platforms, government agencies, and Filipino innovation sites.</p>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-building me-2"></i> TechBehemoths</h5>
+            <p class="card-text">Company profiles, founding years, service categories<br><small>(e.g. 1902 Software, Syntactics Inc.)</small></p>
+            <a href="https://techbehemoths.com" target="_blank" class="btn btn-sm btn-outline-primary">Visit Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-rocket me-2"></i> Nucamp</h5>
+            <p class="card-text">Startup insights, funding, impact<br><small>(e.g. Kumu, Sprout Solutions, Edukasyon.ph)</small></p>
+            <a href="https://nucamp.co" target="_blank" class="btn btn-sm btn-outline-primary">Visit Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-users-gear me-2"></i> Wellfound</h5>
+            <p class="card-text">Founder data, product descriptions, hiring trends<br><small>(e.g. ChatGenie, NextPay, MetroCity AI)</small></p>
+            <a href="https://wellfound.com" target="_blank" class="btn btn-sm btn-outline-primary">Visit Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-lightbulb me-2"></i> TopTen.ph</h5>
+            <p class="card-text">Verified Filipino inventions<br><small>(e.g. AuREUS, Bamboo Incubator, Karaoke)</small></p>
+            <a href="https://topten.ph" target="_blank" class="btn btn-sm btn-outline-primary">Visit Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-flask me-2"></i> DOST-TAPI</h5>
+            <p class="card-text">Government-verified tech inventions<br><small>(e.g. Pili Sealant, Biotek-M, COVID-19 Test Kit)</small></p>
+            <a href="https://tapi.dost.gov.ph" target="_blank" class="btn btn-sm btn-outline-primary">Visit Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-star me-2"></i> GoodNewsPilipinas</h5>
+            <p class="card-text">Award-winning and impactful tech stories<br><small>(e.g. Pili Sealant, AuREUS, COVID-19 Test Kit)</small></p>
+            <a href="https://goodnewspilipinas.com" target="_blank" class="btn btn-sm btn-outline-primary">Visit Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
